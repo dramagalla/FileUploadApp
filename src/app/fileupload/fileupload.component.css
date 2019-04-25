@@ -1,0 +1,20 @@
+.success {
+  color: rgb(78, 170, 78);
+}
+
+progress {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 15px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+#file-upload * {
+  margin: 10px 15px;
+}

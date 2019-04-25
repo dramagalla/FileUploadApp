@@ -1,0 +1,12 @@
+<div>
+  <h1 mat-dialog-title>File Explorer</h1>
+  <div mat-dialog-content>
+    <app-filestree (selectedNodeChange)="onSelection($event)"></app-filestree>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button [disabled]="!selectedNode" (click)="onOkClick()">
+      OK
+    </button>
+    <button mat-button (click)="onCancel()">Cancel</button>
+  </div>
+</div>

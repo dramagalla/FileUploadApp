@@ -1,0 +1,21 @@
+.file-tree-invisible {
+  display: none;
+}
+
+.file-tree ul,
+.file-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.background-highlight {
+  padding: 10px;
+  background-color: rgb(121, 158, 133);
+}
+
+.selectable-node:hover {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(199, 196, 196);
+}

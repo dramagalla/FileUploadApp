@@ -1,0 +1,19 @@
+<div id="file-upload">
+  <div>
+    File:
+    <input type="text" [(ngModel)]="fileName" readonly />
+    <button mat-raised-button (click)="openDialog()">Browse</button>
+  </div>
+  <div>
+    <button mat-raised-button (click)="clearSelection()">Clear</button>
+    <button mat-raised-button (click)="upload()" [disabled]="!fileName">
+      Upload
+    </button>
+  </div>
+</div>
+<div *ngIf="showProgressBar">
+  <progress [value]="progressValue" max="100"></progress>
+  <span *ngIf="uploadComplete" class="success">
+    Upload Complete!
+  </span>
+</div>

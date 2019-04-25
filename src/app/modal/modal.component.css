@@ -1,0 +1,10 @@
+.mat-dialog-content {
+  height: 40vh;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.mat-dialog-actions {
+  bottom: 0px;
+}
